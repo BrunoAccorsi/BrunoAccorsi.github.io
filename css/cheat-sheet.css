@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #220E45;
+}
+
+.code-snippet {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.property, .tag {
+    color: blue;
+}
+
+.value {
+    color: purple;
+}
+.selector {
+    color: #ff6600;
+}
+.description {
+    color: #220E45;
+    font-style: italic;
+}
+
+span:not(.description) {
+    font-weight: bold;
+}
+
+header {
+    grid-column: span 2;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+body > section {
+    margin: 50px;
+}

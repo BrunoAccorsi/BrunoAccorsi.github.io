@@ -1,0 +1,182 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF; /* Set the background to white */
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.03) 25%, transparent 25%), linear-gradient(-45deg, rgba(0, 0, 0, 0.03) 25%, transparent 25%);
+    background-size: 30px 30px; /* Adjust the size of the pattern */
+  }
+
+  main {
+    height: calc(100% - 30vh);
+  }
+
+  .background {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Optional - this keeps the background fixed while scrolling */
+    opacity: 0.1;
+    max-width: 100%;
+    height: auto; 
+  }
+
+  .home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10%;
+    height: 100%;
+  }
+
+  .home h1, .home h2 {
+    font-family: monospace;
+    font-size: 3rem;
+    font-weight: normal;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  h1 + h2 {
+    margin-top: 50px;
+  }
+
+  .home h2 {
+    font-size: 2rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  .myName {
+    color: #210D46;
+    font-weight: bolder;
+  }
+
+  /* Header Styling */
+  header {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  }
+  
+  h2 > span {
+    color: gold;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30vh;
+    padding: 10px 0;
+    background-image: linear-gradient(to bottom, #1C043E, #00131A);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.3); 
+  }
+
+  footer > img {
+    height: 100%;
+  }
+  
+  /* Style for the round photo */
+  .shape {
+    width: 60%; /* Adjust the width as needed */
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
+    position: relative;
+    overflow: hidden;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .3));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .3));
+  }
+
+  .shape > div {
+    width: 100%;
+    padding-bottom: 100%; /* Maintain aspect ratio (1:1 in this case) */
+    position: relative;
+    -webkit-mask: url(../images/blob.svg); 
+    mask: url(../images/blob.svg);
+    object-fit: cover;
+    background-image: linear-gradient(to top, #1C043E, #00131A);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+  }
+  
+  .shape img {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio */
+    top: 33%;
+    left: 20%;
+    z-index: -1;
+    filter: grayscale();
+  }
+
+  .socialMedia {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 16px;
+    width: 100%;
+    left: 32px;
+    bottom: 50%; /* Place the socialMedia div at 50% from the bottom */
+    transform: translateY(50%);
+  }
+
+  .socialMedia img {
+    width: 30px;
+  }
+  
+  .backgroundImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Additional styles for size and other properties */
+  }
