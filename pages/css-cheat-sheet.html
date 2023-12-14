@@ -4,13 +4,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/cheat-sheet.css">
   <link rel="stylesheet" href="../css/styles.css">
   <title>CSS Cheat Sheet</title>
 </head>
 <body>
     <header>
-    <!-- Navigation Bar -->
     <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -20,134 +20,136 @@
         </ul>
     </nav>
     </header>
-    <section>
-        <h1>CSS Cheat Sheet - Properties, Values, and Selectors</h1>
-
-        <!-- Properties and Values -->
-        <div class="code-snippet">
-          <span class="property">color:</span> <span class="value">red;</span>
-          <span class="description">Sets the text color to red.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="property">font-size:</span> <span class="value">16px;</span>
-          <span class="description">Specifies the size of the font.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="property">background-color:</span> <span class="value">yellow;</span>
-          <span class="description">Defines the background color of an element.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="property">text-align:</span> <span class="value">center;</span>
-          <span class="description">Aligns text content within its container.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="property">display:</span> <span class="value">flex;</span>
-          <span class="description">Defines a flex container for flex items.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="property">position:</span> <span class="value">relative;</span>
-          <span class="description">Specifies the positioning method of an element.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="property">z-index:</span> <span class="value">1;</span>
-          <span class="description">Determines the stack order of an element.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="property">opacity:</span> <span class="value">0.5;</span>
-          <span class="description">Sets the opacity level for an element.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="property">box-shadow:</span> <span class="value">5px 5px 5px #888888;</span>
-          <span class="description">Adds shadow effects to an element.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="property">transform:</span> <span class="value">rotate(45deg);</span>
-          <span class="description">Applies transformations to an element.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="property">transition:</span> <span class="value">all 0.3s ease;</span>
-          <span class="description">Creates smooth transitions between property values.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="property">overflow:</span> <span class="value">hidden;</span>
-          <span class="description">Specifies how content should behave when it overflows its box.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="property">cursor:</span> <span class="value">pointer;</span>
-          <span class="description">Sets the type of cursor to be displayed.</span>
-        </div>
-      
-        <!-- Selectors -->
-        <h2>CSS Selectors</h2>
-      
-        <div class="code-snippet">
-          <span class="selector">.class-selector</span> <span class="description">Selects elements with a specific class.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">#id-selector</span> <span class="description">Selects an element with a specific ID.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">element-selector</span> <span class="description">Selects all elements of a specific type.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">element, element</span> <span class="description">Selects multiple elements.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">element, element</span> <span class="description">Selects multiple elements.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">element element</span> <span class="description">Selects an element inside another element.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">element > element</span> <span class="description">Selects direct children of an element.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">:hover</span> <span class="description">Styles an element on mouse hover.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">:nth-child(n)</span> <span class="description">Selects elements based on their order.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">[attribute="value"]</span> <span class="description">Selects elements with a specific attribute value.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">:not(selector)</span> <span class="description">Selects elements that do not match a specific selector.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">:first-child</span> <span class="description">Selects the first child of its parent.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">:last-child</span> <span class="description">Selects the last child of its parent.</span>
-        </div>
-      
-        <div class="code-snippet">
-          <span class="selector">:nth-of-type(n)</span> <span class="description">Selects elements of a specified type based on their order.</span>
-        </div>
-    </section>
+    <main>
+      <section>
+          <h1>CSS Cheat Sheet - Properties, Values, and Selectors</h1>
+  
+          <!-- Properties and Values -->
+          <div class="code-snippet">
+            <span class="property">color:</span> <span class="value">red;</span>
+            <span class="description">Sets the text color to red.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="property">font-size:</span> <span class="value">16px;</span>
+            <span class="description">Specifies the size of the font.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="property">background-color:</span> <span class="value">yellow;</span>
+            <span class="description">Defines the background color of an element.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="property">text-align:</span> <span class="value">center;</span>
+            <span class="description">Aligns text content within its container.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="property">display:</span> <span class="value">flex;</span>
+            <span class="description">Defines a flex container for flex items.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="property">position:</span> <span class="value">relative;</span>
+            <span class="description">Specifies the positioning method of an element.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="property">z-index:</span> <span class="value">1;</span>
+            <span class="description">Determines the stack order of an element.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="property">opacity:</span> <span class="value">0.5;</span>
+            <span class="description">Sets the opacity level for an element.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="property">box-shadow:</span> <span class="value">5px 5px 5px #888888;</span>
+            <span class="description">Adds shadow effects to an element.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="property">transform:</span> <span class="value">rotate(45deg);</span>
+            <span class="description">Applies transformations to an element.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="property">transition:</span> <span class="value">all 0.3s ease;</span>
+            <span class="description">Creates smooth transitions between property values.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="property">overflow:</span> <span class="value">hidden;</span>
+            <span class="description">Specifies how content should behave when it overflows its box.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="property">cursor:</span> <span class="value">pointer;</span>
+            <span class="description">Sets the type of cursor to be displayed.</span>
+          </div>
+        
+          <!-- Selectors -->
+          <h2>CSS Selectors</h2>
+        
+          <div class="code-snippet">
+            <span class="selector">.class-selector</span> <span class="description">Selects elements with a specific class.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">#id-selector</span> <span class="description">Selects an element with a specific ID.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">element-selector</span> <span class="description">Selects all elements of a specific type.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">element, element</span> <span class="description">Selects multiple elements.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">element, element</span> <span class="description">Selects multiple elements.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">element element</span> <span class="description">Selects an element inside another element.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">element > element</span> <span class="description">Selects direct children of an element.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">:hover</span> <span class="description">Styles an element on mouse hover.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">:nth-child(n)</span> <span class="description">Selects elements based on their order.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">[attribute="value"]</span> <span class="description">Selects elements with a specific attribute value.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">:not(selector)</span> <span class="description">Selects elements that do not match a specific selector.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">:first-child</span> <span class="description">Selects the first child of its parent.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">:last-child</span> <span class="description">Selects the last child of its parent.</span>
+          </div>
+        
+          <div class="code-snippet">
+            <span class="selector">:nth-of-type(n)</span> <span class="description">Selects elements of a specified type based on their order.</span>
+          </div>
+      </section>
+    </main>
     
     <script src="../js/codesnippet.js"></script>
 </body>

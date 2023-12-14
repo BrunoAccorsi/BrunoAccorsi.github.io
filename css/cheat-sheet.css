@@ -2,10 +2,13 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2 {
     color: #220E45;
+    grid-column: span 2;
 }
 
 .code-snippet {
@@ -41,6 +44,11 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+
+    @media only screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 body > section {

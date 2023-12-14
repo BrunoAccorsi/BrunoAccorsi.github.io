@@ -21,7 +21,7 @@
   }
 
   main {
-    height: calc(100% - 30vh);
+    height: 100vh;
   }
 
   .background {
