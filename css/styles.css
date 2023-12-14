@@ -41,8 +41,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 10%;
-    height: 100%;
+    padding: 5% 10%;
+    height: calc(70vh - 70px);
 
     @media only screen and (max-width: 767px) {
       flex-direction: column;
@@ -61,7 +61,7 @@
   }
 
   h1 + h2 {
-    margin-top: 50px;
+    margin-top: 0.5rem;
   }
 
   .home h2 {
@@ -141,6 +141,7 @@
 
     @media only screen and (max-width: 767px) {
       width: 100%; /* Adjust the width as needed */
+      max-width: 200px; 
     }
   }
 
@@ -154,6 +155,10 @@
     background-image: linear-gradient(to top, #1C043E, #00131A);
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
+
+    @media only screen and (max-width: 767px) {
+      margin-top: -20px;
+    }
   }
   
   .shape img {
