@@ -95,8 +95,15 @@
   }
   
   nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 10px;
+
+    @media screen and (max-width: 600px) {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 80px; /* Adjust as needed */
+    }
   }
   
   nav ul li a {
