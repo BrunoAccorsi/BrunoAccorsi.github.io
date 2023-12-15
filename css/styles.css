@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +10,12 @@
     padding: 0;
   }
   
-  /* Body Styling */
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #FFFFFF; /* Set the background to white */
+    background-color: #FFFFFF; 
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.03) 25%, transparent 25%), linear-gradient(-45deg, rgba(0, 0, 0, 0.03) 25%, transparent 25%);
-    background-size: 30px 30px; /* Adjust the size of the pattern */
+    background-size: 30px 30px; 
   }
 
   main {
@@ -32,7 +30,7 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; /* Optional - this keeps the background fixed while scrolling */
+    background-attachment: fixed; 
     opacity: 0.1;
     max-width: 100%;
     height: auto; 
@@ -77,7 +75,6 @@
     font-weight: bolder;
   }
 
-  /* Header Styling */
   header {
     background-color: #fff;
     color: #333;
@@ -111,11 +108,9 @@
     text-decoration: underline;
   }
   
-  /* Footer Styling */
   footer {
     display: flex;
     position: absolute;
-    /* bottom: 0; */
     width: 100%;
     height: 30vh;
     padding: 10px 0;
@@ -127,25 +122,24 @@
     height: 100%;
   }
   
-  /* Style for the round photo */
   .shape {
-    width: 60%; /* Adjust the width as needed */
-    max-width: 600px; /* Set a maximum width */
-    margin: 0 auto; /* Center the container */
+    width: 60%; 
+    max-width: 600px;
+    margin: 0 auto; 
     position: relative;
     overflow: hidden;
     -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .3));
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .3));
 
     @media only screen and (max-width: 767px) {
-      width: 100%; /* Adjust the width as needed */
+      width: 100%; 
       max-width: 200px; 
     }
   }
 
   .shape > div {
     width: 100%;
-    padding-bottom: 100%; /* Maintain aspect ratio (1:1 in this case) */
+    padding-bottom: 100%;
     position: relative;
     -webkit-mask: url(../images/blob.svg); 
     mask: url(../images/blob.svg);
@@ -163,7 +157,7 @@
     position: absolute;
     width: 60%;
     height: auto;
-    object-fit: cover; /* Maintain aspect ratio */
+    object-fit: cover; 
     top: 33%;
     left: 20%;
     z-index: -1;
@@ -176,7 +170,7 @@
     position: absolute;
     gap: 16px;
     left: 32px;
-    bottom: 50%; /* Place the socialMedia div at 50% from the bottom */
+    bottom: 50%; 
     transform: translateY(50%);
   }
 
@@ -189,22 +183,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Additional styles for size and other properties */
   }
   
-  /* The actual timeline (the vertical ruler) */
   .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
   }
   
-  /* The actual timeline (the vertical ruler) */
   .timeline::after {
     content: '';
     position: absolute;
     width: 6px;
-    /* background-color: #1C043E; */
     background-image: linear-gradient(to top, #1C043E, white);
     top: 0;
     bottom: 0;
@@ -212,7 +202,6 @@
     margin-left: -3px;
   }
   
-  /* Container around content */
   .container {
     padding: 10px 40px;
     position: relative;
@@ -220,7 +209,6 @@
     width: 50%;
   }
   
-  /* The circles on the timeline */
   .container::after {
     content: '';
     position: absolute;
@@ -234,17 +222,14 @@
     z-index: 1;
   }
   
-  /* Place the container to the left */
   .left {
     left: 0;
   }
   
-  /* Place the container to the right */
   .right {
     left: 50%;
   }
   
-  /* Add arrows to the left container (pointing right) */
   .left::before {
     content: " ";
     height: 0;
@@ -258,7 +243,6 @@
     border-color: transparent transparent transparent white;
   }
   
-  /* Add arrows to the right container (pointing left) */
   .right::before {
     content: " ";
     height: 0;
@@ -272,12 +256,10 @@
     border-color: transparent white transparent transparent;
   }
   
-  /* Fix the circle for containers on the right side */
   .right::after {
     left: -16px;
   }
   
-  /* The actual content */
   .content {
     padding: 20px 30px;
     background-color: #1C043E;
@@ -286,21 +268,17 @@
     border-radius: 6px;
   }
   
-  /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
     .timeline::after {
       left: 31px;
     }
   
-  /* Full-width containers */
     .container {
       width: 100%;
       padding-left: 70px;
       padding-right: 25px;
     }
   
-  /* Make sure that all arrows are pointing leftwards */
     .container::before {
       left: 60px;
       border: medium solid white;
@@ -308,12 +286,10 @@
       border-color: transparent white transparent transparent;
     }
   
-  /* Make sure all circles are at the same spot */
     .left::after, .right::after {
       left: 15px;
     }
   
-  /* Make all right containers behave like the left ones */
     .right {
       left: 0%;
     }
