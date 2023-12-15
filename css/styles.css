@@ -274,6 +274,10 @@
     position: relative;
     border-radius: 6px;
   }
+
+  .content p {
+    margin-bottom: 16px;
+  }
   
   @media screen and (max-width: 600px) {
     .timeline::after {
