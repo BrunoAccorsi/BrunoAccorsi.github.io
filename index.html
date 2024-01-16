@@ -1,88 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Bruno Accorsi - Portfolio</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#about">About me</a></li>
-        <li><a href="pages/html-cheat-sheet.html">HTML Cheat Sheet</a></li>
-        <li><a href="pages/css-cheat-sheet.html">CSS Cheat Sheet</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Bruno Accorsi - Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About me</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section id="home" class="hide">
-      <div class="home">
-        <div>
-          <h1>Hello there! <br>I'm <span class="myName">Bruno Accorsi Bergoli</span></h1>
-          <h2>And I'm a web developer <span>&lt;/&gt;</span></h2>
-        </div>
-        <div class="shape">
+    <main>
+      <section id="home" class="hide">
+        <div class="home">
           <div>
-            <img src="images/profile.png" alt="Your Profile Picture">
+            <h1>
+              Hello there! <br />I'm
+              <span class="myName">Bruno Accorsi Bergoli</span>
+            </h1>
+            <h2>And I'm a web developer <span>&lt;/&gt;</span></h2>
+          </div>
+          <div class="shape">
+            <div>
+              <img src="images/profile.png" alt="Your Profile Picture" />
+            </div>
           </div>
         </div>
+      </section>
+      <section id="about" class="hide">
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2>Bruno Accorsi Bergoli</h2>
+              <p>
+                Passionate about software development, I bring over three years
+                of invaluable experience collaborating within a dynamic team of
+                60 developers focused on refining web-based ERP systems. My
+                journey has been enriched by not just contributing to the team's
+                success but also taking the lead in guiding new members and
+                stepping up in leadership roles as needed. My aim is to channel
+                this expertise into the Canadian job market, seeking
+                opportunities to further excel and deepen my knowledge in this
+                ever-evolving field.
+              </p>
+              <p>
+                As a Full Stack Developer, I possess a robust understanding of
+                diverse programming tools and languages essential for both
+                backend and frontend development. Seamlessly navigating through
+                any phase of the development process has become second nature. I
+                thrive in collaborative settings, leveraging my technical
+                prowess to contribute meaningfully, backed by three years of
+                hands-on experience.
+              </p>
+              <p>
+                My goal is to continue this journey, leveraging my skills to not
+                only excel in the Canadian job market but also to continually
+                grow and learn within the realm of software development.
+              </p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h3>May 2021 - August 2023</h3>
+              <h2>BLING! ERP - FULL STACK DEVELOPER, Brazil</h2>
+              <ul class="description">
+                <li>
+                  Enhanced sales, stock management, receipts, tax reports, and
+                  automated services
+                </li>
+                <li>Managed maintenance for almost 200k simultaneous users</li>
+                <li>
+                  Utilized Scrum for work-hour estimation and progress tracking
+                </li>
+                <li>
+                  Translated UI/UX designs into functional elements for seamless
+                  user experiences
+                </li>
+                <li>Integrated RESTful APIs for dynamic content display</li>
+                <li>Collaborated with back-end developers for API design</li>
+                <li>Created unit test cases for automation</li>
+                <li>
+                  Constructed databases and table structures for web
+                  applications
+                </li>
+                <li>Reviewed code, debugged problems, and corrected issues</li>
+              </ul>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h3>Jan 2020 - May 2021</h3>
+              <h2>Freelancer</h2>
+              <ul class="description">
+                <li>
+                  Develop, test, and deploy dynamic web applications for diverse
+                  clients, ensuring responsiveness and efficient functionality.
+                </li>
+                <li>Managed maintenance for almost 200k simultaneous users</li>
+                <li>
+                  Collaborate with multiple companies, adapting to unique
+                  project requirements and delivering custom-tailored solutions
+                </li>
+                <li>
+                  Utilize a broad technology stack, including languages
+                  (JavaScript, PHP, C++) and frameworks (Angular, React, React
+                  Native, Jquery, Node.js).
+                </li>
+                <li>
+                  Implement both front-end and back-end development tasks,
+                  creating user interfaces and server-side application logic.
+                </li>
+                <li>
+                  Manage databases and data storage solutions using MySQL,
+                  MongoDb or similar systems.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h3>January 2019 - November 2020</h3>
+              <h2>Serra WEB - Web Developer Intern, Brazil</h2>
+              <ul class="description">
+                <li>
+                  Developed user interfaces with modern JavaScript frameworks,
+                  HTML5, and CSS3
+                </li>
+                <li>
+                  Adapted quickly to constantly changing, deadline-driven
+                  environment
+                </li>
+                <li>
+                  Collaborated with project managers and development team to
+                  brainstorm new ideas
+                </li>
+                <li>Wrote custom HTML and JavaScript for existing websites</li>
+                <li>Worked closely with developers on creating new code</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="images/background.jpeg" alt="" class="backgroundImage" />
+      <div class="socialMedia">
+        <a href="https://linkedin.com/in/brunoaccorsi" target="_blank"
+          ><img src="images/linkedIn.png" alt="linkedIn"
+        /></a>
+        <a href="https://www.instagram.com/brunobergoli/" target="_blank"
+          ><img src="images/instagram.png" alt="instagram"
+        /></a>
+        <a href="https://github.com/BrunoAccorsi" target="_blank"
+          ><img src="images/github.png" alt="github"
+        /></a>
       </div>
-    </section>
-    <section id="about" class="hide">
-      <div class="timeline">
-        <div class="container left">
-          <div class="content">
-            <h2>Bruno Accorsi Bergoli</h2>
-            <p>Passionate about software development, I bring over three years of invaluable experience collaborating within a dynamic team of 60 developers focused on refining web-based ERP systems. My journey has been enriched by not just contributing to the team's success but also taking the lead in guiding new members and stepping up in leadership roles as needed. My aim is to channel this expertise into the Canadian job market, seeking opportunities to further excel and deepen my knowledge in this ever-evolving field.</p>
-            <p>As a Full Stack Developer, I possess a robust understanding of diverse programming tools and languages essential for both backend and frontend development. Seamlessly navigating through any phase of the development process has become second nature. I thrive in collaborative settings, leveraging my technical prowess to contribute meaningfully, backed by three years of hands-on experience.</p>
-            <p>My goal is to continue this journey, leveraging my skills to not only excel in the Canadian job market but also to continually grow and learn within the realm of software development.</p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h3>May 2021 - August 2023</h3>
-            <h2>BLING! ERP - FULL STACK DEVELOPER, Brazil</h2>
-            <ul class="description">
-              <li>Enhanced sales, stock management, receipts, tax reports, and automated services</li>
-              <li>Managed maintenance for almost 200k simultaneous users</li>
-              <li>Utilized Scrum for work-hour estimation and progress tracking</li>
-              <li>Translated UI/UX designs into functional elements for seamless user experiences</li>
-              <li>Integrated RESTful APIs for dynamic content display</li>
-              <li>Collaborated with back-end developers for API design</li>
-              <li>Created unit test cases for automation</li>
-              <li>Constructed databases and table structures for web applications</li>
-              <li>Reviewed code, debugged problems, and corrected issues</li>
-            </ul>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content">
-            <h3>January 2019 - November 2020</h3>
-            <h2>Serra WEB - Web Developer Intern, Brazil</h2>
-            <ul class="description">
-              <li>Developed user interfaces with modern JavaScript frameworks, HTML5, and CSS3</li>
-              <li>Adapted quickly to constantly changing, deadline-driven environment</li>
-              <li>Collaborated with project managers and development team to brainstorm new ideas</li>
-              <li>Wrote custom HTML and JavaScript for existing websites</li>
-              <li>Worked closely with developers on creating new code</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <img src="images/background.jpeg" alt="" class="backgroundImage">
-    <div class="socialMedia">
-      <a href="https://linkedin.com/in/brunoaccorsi" target="_blank"><img src="images/linkedIn.png" alt="linkedIn"></a>
-      <a href="https://www.instagram.com/brunobergoli/" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
-      <a href="https://github.com/BrunoAccorsi" target="_blank"><img src="images/github.png" alt="github"></a>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
